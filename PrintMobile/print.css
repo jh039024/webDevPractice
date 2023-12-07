@@ -49,18 +49,18 @@ body{
 
 #navigation{
     display: none;
-	background-color:Gray;
 
 }
 
 #navigation ul{
+    display: none;
 	list-style:none;
 	overflow:hidden;
 }
 
 
 #navigation a{
-		
+    display: none;
 	border: 2px inset #CCCCCC;
 	background-color: #0000FF;
 	line-height: 250%;
@@ -72,6 +72,7 @@ body{
 }
 
 #navigation a:hover{
+    display: none;
 	color: #FFFF00;
 	border: 2px outset #CCCCCC;
 
@@ -153,15 +154,8 @@ h3
     text-align:right;
 }
 
-.imageleft
-{
-    width: 45%;
-}
-
-.imageright
-{
-
-    width: 45%;
+img{
+    display: none;
 }
 
 .logoleft{
