@@ -1,0 +1,11 @@
+ol, ul { 
+    list-style-type: none;
+     }
+
+#perens{
+    font-style: italic;
+}
+
+#instruct{
+    margin-left: 40px;
+}
