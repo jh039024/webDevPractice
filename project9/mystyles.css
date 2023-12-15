@@ -185,3 +185,22 @@ footer{
 .altHead{
     border:none;
 }
+
+.linkText{
+    margin-left:40px;
+    font-size: 20px;
+}
+
+.linkBack{
+    background-color: #FFC146;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    width:850px;
+    padding-bottom:20px;
+}
+
+.linkImg{
+    width:10%;
+    height:10%;
+}
