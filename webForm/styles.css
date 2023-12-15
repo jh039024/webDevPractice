@@ -1,0 +1,16 @@
+ol, ul { 
+    list-style-type: none;
+     }
+
+#perens{
+    font-style: italic;
+}
+
+#instruct{
+    margin-left: 40px;
+    width: 500px;
+    height: 75px;
+}
+#smField{
+    height: 200px;
+}
