@@ -7,8 +7,9 @@
     <link media="print" rel ="stylesheet" href="print.css" type="text/css">
 </head>
 
-<body onload="preloadImages()">
 
+<body onload="preloadImages()">
+    <form action="FormToEmail.php" method="post" name="CustomerSurvey" target="_blank">
     <script type="text/javascript" src="myscript.js"></script>
     <div id="container">
         <header>
@@ -26,59 +27,126 @@
                 </ul>
             </nav>
         </header>
-
+        <h2 class="headCent">Survey</h2>
+        <p>Hello! We are currently holding a survey for our clients or anyone who is interested! Dont worry, your information will be kept safe.
+            By providing your information, you give us consent to send info on new deals, as well as other important information. By taking this
+            survey, you are helping us to better understand the wants and needs of our customers.
+        </p>
         <section>
-            <!--background image-->
-            <article>
-                <h1 id="top">About Extreme Honeymoons</h1>
-        <p>
-            <a href="#adv">Our Adventure Options</a> |
-            <a href="#unique">What Makes Us Unique</a> </p>
-        <h2>History</h2>
-        <p>In the Beginning ...
-        Ted and Betty Russon have been happily married for 30 years.  They look back on their honeymoon at Arches National Monument with great fondness.  They have tried to keep the same spice in their marriage as they found on their honeymoon.  This amazing couple 
-        make it a practice to try out new extreme sports together, just for the fun of it.  Their own honeymoon consisted of a wild mountain biking adventure in the beautiful slick red rock near Moab, Utah and through Arches National Monument.  On this same trip they also spent 3 days white water rafting down the Colorado River.
-        </p>
-        
-        <p>Where We are Today ...
-        Extreme Honeymoons has been in business since 1976.  Over 2000 couples have enjoyed these high-octane honeymoons.  The Russons have also had several of their children get married and have enjoyed planning ultra extreme honeymoons for these lucky couples.  One of the benefits of living in Utah is the wide variety of adventure activities in the state.  
-        <img src="Images/AboutUs/OlderBikingSmall.jpg" alt="Old Couple Biking" class="botmid" width="250" height="166">
-        </p>
-        <p><a href="#top">Return To Top</a></p>
-        <hr>
-        
-        <h2 id="adv">Some of Our Honeymoon Adventure Options</h2>
-        <ul>  
-        <li>Ice Climbing on Bridal Veil Falls: 1-2 day Tour</li>
-        <li>Bungee Jumping off of Dead Horse Point: 2-3 day Tour</li>
-        <li>Bow Hunting or Pursuing Cougars in the Manti-Lasal National Forest: 1 week Tour</li>
-        <li>Parasailing from the Top of Mount Timpanogos: 1-2 day Tour</li>
-        <li>4WD Safari Jeep Rendevous in Moab: 1 week Tour</li>
-        <li>Swimming with the Carp in Utah Lake: 1-2 day Tour</li>
-        <li>Heliskiing on Kings Peak: 1-2 day Tour</li>
-        <li>High Speed Drag Racing on the Salt Flats: 3 day Tour</li>
-        <li>Bobsled and Ski Jumping at the Utah Olympic Park: 2-3 day Tour</li>
-        </ul>
-        <p><a href="#top">Return To Top</a></p>
-        <img src="Images/AboutUs/iStockParaglideSm.jpg" alt="Paraglide" class="botmid" width="250" height="203">
-        <hr>
-
-        <h2 id="unique">What Makes Us Unique ...</h2>
-        <p>Couples recently married who want to get to know each other better should think about trying an extreme honeymoon.  The benefit of using the service provided by Extreme Honeymoons is that all the details are taken care of.  Equipment is delivered to the site, transportation and meals are provided, and lessons in the needed skills are given.  All the newlyweds have to do is sign the injury release forms.  You could choose to have a guided adventure or go it on your own.  If you have a daring proposal for an untried adventure, just tell the Russons and they will make your dreams come true.  
-        </p>
-        
-        <p>Press Releases
-        Wild Thing Magazine, August 2012:
-        "If you believe the saying, you only get married once, then you will want to make your honeymoon a memorable experience.  Extreme Honeymoons can help the couple that screams together, stay together.  They will expertly plan every step of your unforgetable trip so that all you will have to do is just survive.  According to Ted Russon, the founder of Extreme Honeymoons, "What else would you want to do on your honeymoon?  Some of the wild things they could plan for you include: kayaking on the Colorado River, bungee Jumping at Flaming Gorge Dam, bareback riding in the Bryce Canyon Rodeo, and an ATV safari across the Great Western Trail."
-        </p>
-        
-        <p>Utah Brides Magazine, May 2012:
-        <blockquote>"Brides-to-be might worry that their honeymoon may be a forgetable experience. If you think a candle lit dinner sounds boring and you have seen one too many movies, then consider an Extreme Honeymoon.  Let Ted Russon's Extreme Honeymoons plan all the details of a wild and crazy honeymoon adventure. These reasonable priced tours are totally safe and an insurance policy is included with the cost of all packages.  One recent newlywed breathlessly related this experience. Like, it was the most awesome experience of my life!"  So surprise your new spouse with a white-knuckle honeymoon."  
-        </blockquote>
-        </p>
-        <p><a href="#top">Return To Top</a></p>
-            </article>           
-</section>
+        <div class="linkBack">
+            <fieldset>
+                <legend>Survey</legend>
+                <fieldset>
+                <legend>Info</legend>
+              <ul>
+                <li>
+                  <label for="firstName">First Name:</label>
+                  <input id="firstName" class="surv" name="firstName" type="text" tabindex="1">
+                </li>
+                <li>
+                    <label for="lastName">Last Name:</label>
+                    <input id="lastName" class="surv" name="lastName" type="text" tabindex="2">
+                </li>
+                <li>
+                  <label for="number">Phone Number:</label>
+                  <input id="number" class="surv" name="number" type="text" tabindex="3">
+                </li>
+                <li>
+                  <label for="email">Email:</label>
+                  <input id="email" class="surv" name="email" type="text" tabindex="4">
+                </li>
+              </ul>
+            </fieldset>
+              <fieldset>
+                <legend>What activities are you interested in??</legend>
+                <ul>
+                    <li>
+                        <label for="ski">Skiing</label>
+                        <input id="ski" name="ski" type="checkbox" tabindex="5">
+                    </li>
+                    <li>
+                        <label for="bike">Biking</label>
+                        <input id="bike" name="bike" type="checkbox" tabindex="6">
+                    </li>
+                    <li>
+                        <label for="spa">Spa</label>
+                        <input id="spa" name="spa" type="checkbox" tabindex="7">
+                    </li>
+                    <li>
+                        <label for="dance">Couples Dancing</label>
+                        <input id="dance" name="dance" type="checkbox" tabindex="8">
+                    </li>
+                    <li>
+                        <label for="mass">Couples Massage</label>
+                        <input id="mass" name="mass" type="checkbox" tabindex="9">
+                    </li>
+                    <li>
+                        <label for="fish">Fishing</label>
+                        <input id="fish" name="fish" type="checkbox" tabindex="10">
+                    </li>
+                    <li>
+                        <label for="cook">Couples Cooking</label>
+                        <input id="cook" name="cook" type="checkbox" tabindex="11">
+                    </li>
+                    <li>
+                        <label for="photo">Photoshoot</label>
+                        <input id="photo" name="photo" type="checkbox" tabindex="12">
+                    </li>
+                    <li>
+                        <label for="other">Other:</label>
+                        <input id="other" name="other" type="text" tabindex="13">
+                    </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>What location sounds most interesting to you?</legend>
+                <ul>
+                <li>
+                    <label for="one">Mexico</label>
+                    <input id="one" name="one" type="radio" tabindex="14">
+                </li>
+                <li>
+                    <label for="one">Bahamas</label>
+                    <input id="Bahama" name="one" type="radio" tabindex="15">
+                </li>
+                <li>
+                    <label for="one">Egypt</label>
+                    <input id="Egypt" name="one" type="radio" tabindex="16">
+                </li>
+                <li>
+                    <label for="one">Australia</label>
+                    <input id="aus" name="one" type="radio" tabindex="17">
+                </li>
+                <li>
+                    <label for="hawaii">Hawaii</label>
+                    <input id="hawaii" name="one" type="radio" tabindex="18">
+                </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>How many people do you plan to bring? <span class="italic">(Including yourself)</span></legend>
+                <select tabindex="19">
+                    <option selected="">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>What/where is your ideal honeymoon? Why?</legend>
+                <textarea maxlength="500" placeholder="No more than 500 characters long" id="ideal" name="ideal"></textarea>
+            </fieldset>
+            <input name="subButton" type="submit" value="Submit">
+                <input name="resetButton" type="reset" value="Reset">
+            </fieldset>    
+        </div>
+        </section>
                 <div class="tributes-snippit">
                     <h2>Tribute</h2>
                     <blockquote>I'm Brian Jones. My wife Kitty and I were just married last winter. We wanted a memorable
@@ -95,5 +163,6 @@
             <p>This web site was created solely for educational purposes</p>
         </div>
     </footer>
+</form>
 </body>
 </html>

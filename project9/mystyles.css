@@ -204,3 +204,22 @@ footer{
     width:10%;
     height:10%;
 }
+
+.surv{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#ideal{
+    width:600px;
+    height:75px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.headCent{
+    text-align:center;
+    font-family:serif;
+}
